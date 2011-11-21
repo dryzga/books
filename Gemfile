@@ -5,6 +5,8 @@ gem 'rails', '3.1.2'
 gem 'sqlite3', :group => [:development, :test]
 gem 'pg', :group => [:production]
 
+gem 'haml-rails'
+
 gem 'rspec-rails', :group => [:development, :test]
 gem 'cucumber-rails', :group => :test
 gem 'database_cleaner', :group => :test
