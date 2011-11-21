@@ -1,0 +1,10 @@
+= form_for(Book.new, {:url => books_path}) do |f|
+  %p
+    = f.label :title, "Title"
+    %br
+    = f.text_field :title, :value=>@book.title
+  %p
+    = f.label :content, "Content"
+    %br
+    = f.text_area :content, :value=>@book.content
+  = f.submit "Add"
