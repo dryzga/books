@@ -8,7 +8,6 @@ gem 'pg', :group => [:production]
 gem 'rspec-rails', :group => [:development, :test]
 gem 'cucumber-rails', :group => :test
 gem 'database_cleaner', :group => :test
-gem 'webrat'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
