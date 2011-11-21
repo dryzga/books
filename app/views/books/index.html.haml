@@ -1,1 +1,4 @@
-
+- for book in @books
+  = book.title
+  = book.content
+= link_to "Add Book", new_book_path

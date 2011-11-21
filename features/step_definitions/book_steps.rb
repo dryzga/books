@@ -1,5 +1,3 @@
-require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "paths"))
-
 Given /^I have books titled (.+)$/ do |titles|
   titles.split(', ').each do |title|
     Book.create!(:title => title)
@@ -11,5 +9,5 @@ When /^I go to (.+)$/ do |page_name|
 end
 
 Then /^I should see "([^\"]*)"$/ do |text|
-  response.should contain(text)
+  page.should have_content(text)
 end
